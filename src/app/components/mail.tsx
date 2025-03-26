@@ -8,11 +8,9 @@ import {
   File,
   Inbox,
   MessagesSquare,
-  Moon,
   Search,
   Send,
   ShoppingCart,
-  Sun,
   Trash2,
   Users2,
 } from "lucide-react"
@@ -38,8 +36,6 @@ import { MailDisplay } from "./mail-display"
 import { MailList } from "./mail-list"
 import { useMail } from "./use-mail"
 import { Nav } from "./nav"
-import { Button } from "@/components/ui/button"
-import { useTheme } from "next-themes"
 import { ModeToggle } from "./ThemeToggle"
 
 interface MailProps {
@@ -64,7 +60,6 @@ export function Mail({
   const [isCollapsed, setIsCollapsed] = React.useState(defaultCollapsed)
   const [mail] = useMail()
 
-  const {setTheme} = useTheme()
 
   return (
     <TooltipProvider delayDuration={0}>

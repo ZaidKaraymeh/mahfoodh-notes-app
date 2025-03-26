@@ -1,10 +1,6 @@
 
-import Image from "next/image"
-
 import { accounts, mails } from "../components/data"
 import { Mail } from "../components/mail"
-import { Moon, Sun } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 export default function MailPage() {
 
